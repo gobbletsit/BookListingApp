@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        style="@style/ListViewLinearLayouts">
+
+        <TextView
+            style="@style/ListViewTitleTextViews"
+            android:layout_weight="3"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:id="@+id/title_text_view"/>
+
+        <TextView
+            style="@style/ListViewTitleTextViews"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:id="@+id/rating_text_view"/>
+
+    </LinearLayout>
+
+    <View style="@style/ViewDesignHorizontalThin" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/description_text_view"
+            android:maxLines="3"
+            android:textStyle="italic"
+            android:ellipsize="end"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <View style="@style/ViewDesignHorizontalThin" />
+
+
+    <LinearLayout
+        style="@style/ListViewLinearLayouts"
+        android:focusable="false"
+        android:clickable="false">
+
+        <TextView
+            style="@style/ListViewTitleTextViews"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:text="@string/written_by"/>
+
+        <TextView
+            style="@style/ListViewTitleTextViews"
+            android:layout_weight="2"
+            android:fontFamily="cursive"
+            android:textStyle="bold"
+            android:textColor="@color/colorSignature"
+            android:id="@+id/author_text_view"/>
+
+
+
+    </LinearLayout>
+
+    <View style="@style/ViewDesignHorizontalThick" />
+
+</LinearLayout>
+
+
+
